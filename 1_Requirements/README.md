@@ -6,13 +6,14 @@
 | --- | --- |
 |HLR1|Remote control locks are used Instead of using keys to  control car locks & components|
 |HLR2|Door locks & components inside the vehicle authorize access to owners only|
-|HLR3|When unauthorized person tries to get into your vehicle by breaking the door their will be a beeping sound|
+|HLR3| When the velocity is 0 and the battery is on their will be an indication without any sound |
 |HLR4|When the car is in motion the door lock should be firmly closed|
 |HLR5|The door will open only if the seat belts are locked|
 |HLR6|If the car is in motion and any door is open the system will display an indication|
 
 | Low level Requirement | Description |
 | --- | --- |
+| LLR3 |When unauthorized person tries to get into your vehicle by breaking the door their will be a beeping sound|
 | LLR1 | Beeping sound will stop when the doors are closed.|
 | LLR2 | When the doors are open there will be individual light indication. |
 | LLR3 | When the boot is open there will be indication on the dashboard. |
