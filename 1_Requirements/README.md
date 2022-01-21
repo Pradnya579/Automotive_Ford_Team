@@ -8,7 +8,7 @@
 |HLR_2|Door locks & components inside the vehicle authorize access to owners only|
 |HLR_3| When the velocity is 0 and the battery is on their will be an indication without any sound |
 |HLR_4|When the car is in motion the door lock should be firmly closed|
-|HLR_5|The door will open only if the seat belts are locked|
+|HLR_5|The door open indication will be off only when all seat belts are locked .|
 |HLR_6|If the car is in motion and any door is open the system will display an indication|
 
 | Low level Requirement | Description |
