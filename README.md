@@ -5,7 +5,7 @@
 ## Team Members 
 | Name | Feature  |
 | --- | --- |
-|Pradnya Chaudhari | Interior Light System |
+|Pradnya Chaudhari | Interior Lighting Control |
 |Ragini Bhandare | Power Mirror |
 |Vinaya Ranade | Door Lock System |
 |Aarti Bhagat | Power Window |
