@@ -39,8 +39,8 @@
 | HLR1 |When there is dust or rain the windows will close automatically.|
 | HLR2 | The tint of the window will change when there is abundance of sunlight.|
 | HLR3 | When the ac is on it will get detected and the windows will close automatically. |
-| HLR4 | When the safety feature is on nly the driver will be able to control the positions of the window.|
-|HLR5  | When anything gets in the way of the window while getting up,the window will go down.|
+| HLR4 | When the safety feature is on, only the driver will be able to control the positions of the windows.|
+|HLR5  | When anything gets in the way of the window while goes up,the window will go down again.|
 
 
 | Low level Requirement | Description |
@@ -49,7 +49,7 @@
 | LLR2 | AThe power windows will go all the way up like the automatic down |
 | LLR3 | When the door is locked the windows will close automatically. |
 
-## INTERIOR LIGHTING CONTROL
+## INTERIOR LIGHT CONTROL
 
 
 | High level Requirement | Description |
