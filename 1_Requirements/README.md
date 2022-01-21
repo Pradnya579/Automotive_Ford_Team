@@ -54,16 +54,19 @@
 
 | High level Requirement | Description |
 | --- | --- |
-|HLR1|Light will be on when the unlock button pressed on the key|
-|HLR2|Voice command will ON/OFF|
+|HLR1|Light will be on when Door is open|
+|HLR2|Light will be in on state until all the door is correctly closed|
 |HLR3|Dashboard Light will ON when the car is unlocked|
 |HLR4|Lights wiil be OFF after 10 sec when the lock button pressed on the key|
 |HLR5|In Night Foot step light is automatically ON|
+|HLR6|Lights can be turn off and on manually with the switch|
 
 
 | Low level Requirement | Description |
 | --- | --- |
-|LLR1|Manually ON/OFF (On-Door-Off)|
-|LLR2|If you leave a door open with the ignition switched off automatically|
+|LLR1|Voice command to turn on and off the light|
+|LLR2|Lights will be turned on when unlockes the car with the remote key from outside|
 |LLR3|Add Multicolour LED|
-|LLR4|Safety indicator|
+|LLR4|The light will turn-off after 5 seconds when we lock the car through the key|
+|LLR5|Safety Indicator|
+
