@@ -49,7 +49,7 @@
 | LLR2 | AThe power windows will go all the way up like the automatic down |
 | LLR3 | When the door is locked the windows will close automatically. |
 
-## INTERIOR LIGHT CONTROL
+## INTERIOR LIGHTING CONTROL
 
 
 | High level Requirement | Description |
