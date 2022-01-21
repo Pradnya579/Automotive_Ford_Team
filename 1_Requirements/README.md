@@ -28,7 +28,7 @@
 
 | Low level Requirement | Description |
 | --- | --- |
-| LLR1 | The system will engage when the car is turned on|
+| LLR1 | Driver can manually adjust the switch to change the position of the mirror|
 | LLR2 | Adjust the mirror direction according to the user requirement |
 | LLR3 | When the engine is on the mirrors has to automatically open |
 
