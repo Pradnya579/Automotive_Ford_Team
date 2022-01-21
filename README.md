@@ -4,4 +4,4 @@ Automotive_Ford_Team
 (1) Door Lock System
 (2) Power Mirror
 (3) Power Window
-(4) Interior Light control
+(4) Interior Lighting control
