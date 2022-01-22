@@ -76,7 +76,7 @@ The Ford Aspire nameplate has been used by the American automobile manufacturer 
 | Low level Requirement | Description |
 | --- | --- |
 | LLR_1 | The power window go all the way down by just tapping the button once. (Automatic down)|
-| LLR_2 | AThe power windows will go all the way up like the automatic down |
+| LLR_2 | The power windows will go all the way up like the automatic down |
 | LLR_3 | When the door is locked the windows will close automatically. |
 
 
