@@ -1,11 +1,11 @@
 
 # INTERIOR LIGHT CONTROL
-
+![images](https://user-images.githubusercontent.com/94118726/150636341-fb56e73f-1c3c-4f57-919e-f1c313d03be4.jpg)
 ## Introduction
 
 The interior lighting in cars consisted of a few incandescent lights that turned on or off in response to microswitches in various doors or simple switches near the light fixture.
 
-
+![interior](https://user-images.githubusercontent.com/94118726/150636352-1b524cd2-6b02-47b6-9b41-e99ac291e1c0.JPG)
 ## 4W's 1H
 
 ### WHAT:
