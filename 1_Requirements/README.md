@@ -1,5 +1,13 @@
 # TEAM FORD
 # Ford Aspire
+The Ford Aspire nameplate has been used by the American automobile manufacturer Ford for the following cars, in the following markets: Ford Festiva, in North America from 1993 to 1997. The sedan version of the Ford Figo, a rebadged third generation Ford Ka in India since 2015.
+
+# Body Control Module
+## Features:
+- Door Lock System
+- Interior Light Control
+- Power Mirror
+- Power Window
 
 ## Door Lock System
 | High level Requirement | Description |
@@ -17,6 +25,27 @@
 | LLR_1 | Beeping sound will stop when the doors are closed.|
 | LLR_2 | When the doors are open there will be individual light indication. |
 | LLR_3 | When the boot is open there will be indication on the dashboard. |
+
+## INTERIOR LIGHT CONTROL
+
+
+| High level Requirement | Description |
+| --- | --- |
+|HLR_1|Light will be on when Door is open|
+|HLR_2|Light will be in on state until all the door is correctly closed|
+|HLR_3|Dashboard Light will ON when the car is unlocked|
+|HLR_4|Lights wiil be OFF after 10 sec when the lock button pressed on the key|
+|HLR_5|In Night Foot step light is automatically ON|
+|HLR_6|Lights can be turn off and on manually with the switch|
+
+
+| Low level Requirement | Description |
+| --- | --- |
+|LLR_1|Voice command to turn on and off the light|
+|LLR_2|Lights will be turned on when unlockes the car with the remote key from outside|
+|LLR_3|Add Multicolour LED|
+|LLR_4|The light will turn-off after 5 seconds when we lock the car through the key|
+|LLR_5|Safety Indicator|
 
 ## POWER MIRROR
 
@@ -50,24 +79,5 @@
 | LLR_2 | AThe power windows will go all the way up like the automatic down |
 | LLR_3 | When the door is locked the windows will close automatically. |
 
-## INTERIOR LIGHT CONTROL
 
-
-| High level Requirement | Description |
-| --- | --- |
-|HLR_1|Light will be on when Door is open|
-|HLR_2|Light will be in on state until all the door is correctly closed|
-|HLR_3|Dashboard Light will ON when the car is unlocked|
-|HLR_4|Lights wiil be OFF after 10 sec when the lock button pressed on the key|
-|HLR_5|In Night Foot step light is automatically ON|
-|HLR_6|Lights can be turn off and on manually with the switch|
-
-
-| Low level Requirement | Description |
-| --- | --- |
-|LLR_1|Voice command to turn on and off the light|
-|LLR_2|Lights will be turned on when unlockes the car with the remote key from outside|
-|LLR_3|Add Multicolour LED|
-|LLR_4|The light will turn-off after 5 seconds when we lock the car through the key|
-|LLR_5|Safety Indicator|
 
