@@ -1,7 +1,7 @@
 
 # INTERIOR LIGHT CONTROL
 
-## Introduction:-
+## Introduction
 
 The interior lighting in cars consisted of a few incandescent lights that turned on or off in response to microswitches in various doors or simple switches near the light fixture.
 
@@ -23,6 +23,8 @@ Most vehicles have interior lights that are also called dome lights or courtesy 
 
 ### How:-
 When the interior lights in a car are working correctly, they will usually come on when you open your door and then shut off some time after you close the door. This process relies on a switch in the door jamb that opens when you open the door and closes when you close the door.
+
+## Requirements
 
 | High level Requirement | Description |
 | --- | --- |
