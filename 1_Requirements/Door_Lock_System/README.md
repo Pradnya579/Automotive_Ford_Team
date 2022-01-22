@@ -26,3 +26,20 @@ To secure the automobile from the inside, the driver simply locks one of the fro
 
 
 ![door](https://user-images.githubusercontent.com/94466750/150640029-2170f373-3d90-4c50-be33-3c6dfd5ec10b.jpg )
+
+## Door Lock System
+| High level Requirement | Description |
+| --- | --- |
+|HLR_1|Remote control locks are used Instead of using keys to  control car locks & components|
+|HLR_2|Door locks & components inside the vehicle authorize access to owners only|
+|HLR_3| When the velocity is 0 and the battery is on their will be an indication without any sound |
+|HLR_4|When the car is in motion the door lock should be firmly closed|
+|HLR_5|The door open indication will be off only when all seat belts are locked .|
+|HLR_6|If the car is in motion and any door is open the system will display an indication|
+
+| Low level Requirement | Description |
+| --- | --- |
+| LLR_1 |When unauthorized person tries to get into your vehicle by breaking the door their will be a beeping sound|
+| LLR_1 | Beeping sound will stop when the doors are closed.|
+| LLR_2 | When the doors are open there will be individual light indication. |
+| LLR_3 | When the boot is open there will be indication on the dashboard. |
