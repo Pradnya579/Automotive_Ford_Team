@@ -25,7 +25,7 @@ Most vehicles have interior lights that are also called dome lights or courtesy 
 When the interior lights in a car are working correctly, they will usually come on when you open your door and then shut off some time after you close the door. This process relies on a switch in the door jamb that opens when you open the door and closes when you close the door.
 
 ## Requirements
-
+### High Level Requirement:
 | High level Requirement | Description |
 | --- | --- |
 |HLR_1|Light will be on when Door is open|
@@ -35,7 +35,7 @@ When the interior lights in a car are working correctly, they will usually come 
 |HLR_5|In Night Foot step light is automatically ON|
 |HLR_6|Lights can be turn off and on manually with the switch|
 
-
+### Low Level Requirement:
 | Low level Requirement | Description |
 | --- | --- |
 |LLR_1|Voice command to turn on and off the light|
