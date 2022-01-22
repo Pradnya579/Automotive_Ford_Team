@@ -1,7 +1,11 @@
 # Body Control Module
+
 ![Body Control Module](https://user-images.githubusercontent.com/94118726/150649288-0258c06a-5755-4b9c-b4db-26da7486f14e.png)
 
 ## Door Lock System
+
+![doorcontrol drawio](https://user-images.githubusercontent.com/94466750/150649498-33388bac-51c2-4327-93bb-bf0705901cee.png)
+
 
 ## Intrior Light Control
 ![INTERIOR LIGHT CONTROL](https://user-images.githubusercontent.com/94118726/150648766-a63f203e-bcc9-4fdc-a4c8-9a468ee191b5.png)
