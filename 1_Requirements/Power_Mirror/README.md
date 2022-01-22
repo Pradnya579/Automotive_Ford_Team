@@ -18,20 +18,19 @@ A power side-view mirror (power side mirror, power wing mirror, or simply power 
 **How:**Each rear view mirror has two DC motors. ... Electricity then flows through the switch to the DC motor and the mirror head moves in the intended direction. If you press the same switch to the opposite direction, you are reversing the electricity to the mirror motor and the mirror moves in the opposite direction
 
 
-## High level Requirement
-|  | Description |
-| --- | --- |
-| HLR_1 |When there is dust or rain the windows will close automatically.|
-| HLR_2 | The tint of the window will change when there is abundance of sunlight.|
-| HLR_3 | When the ac is on it will get detected and the windows will close automatically. |
-| HLR_4 | When the safety feature is on, only the driver will be able to control the positions of the windows.|
-| HLR_5  | When anything gets in the way of the window while goes up,the window will go down again.|
+## POWER MIRROR
 
-
-## Low level Requirement
-|  | Description |
+| High level Requirement | Description |
 | --- | --- |
-| LLR_1 | The power window go all the way down by just tapping the button once. (Automatic down)|
-| LLR_2 | The power windows will go all the way up like the automatic down.(Automatic Up) |
-| LLR_3 | When the door is locked the windows will close automatically. |
+| HLR_1 |Power folding mirrors automatically fold inwards while the car is parked to avoid accidental damage|
+| HLR_2 | The mirrors will fold back out when the car door is opened|
+| HLR_3 | There will be a clicking sound when the mirrors are resynchronising |
+| HLR_4 | Due to the high beam of electrons the glass of a power mirror may also be electrically heated to prevent from fogging and icing|
+
+| Low level Requirement | Description |
+| --- | --- |
+| LLR_1 | Driver can manually adjust the switch to change the position of the mirror|
+| LLR_2 | Adjust the mirror direction according to the user requirement |
+| LLR_3 | When the engine is on the mirrors has to automatically open |
+
 
