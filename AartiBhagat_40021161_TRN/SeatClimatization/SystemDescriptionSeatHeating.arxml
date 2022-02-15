@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="503b8fd5-80bd-420d-8b60-453bdbb70f76">
+      <SHORT-NAME>ARRoot</SHORT-NAME>
+      <ELEMENTS>
+        <HW-ELEMENT>
+          <SHORT-NAME></SHORT-NAME>
+        </HW-ELEMENT>
+        <CAN-CLUSTER>
+          <SHORT-NAME>CoilLeftCanCluster</SHORT-NAME>
+          <CAN-CLUSTER-VARIANTS>
+            <CAN-CLUSTER-CONDITIONAL/>
+          </CAN-CLUSTER-VARIANTS>
+        </CAN-CLUSTER>
+        <ECU-INSTANCE>
+          <SHORT-NAME>CoilLeftEcuInstance</SHORT-NAME>
+          <COMM-CONTROLLERS>
+            <CAN-COMMUNICATION-CONTROLLER>
+              <SHORT-NAME>CoilLeftCanCommunicationController</SHORT-NAME>
+            </CAN-COMMUNICATION-CONTROLLER>
+          </COMM-CONTROLLERS>
+          <CONNECTORS>
+            <CAN-COMMUNICATION-CONNECTOR>
+              <SHORT-NAME>CoilLeftCanCommunicationConnector</SHORT-NAME>
+              <COMM-CONTROLLER-REF DEST="CAN-COMMUNICATION-CONTROLLER">/ARRoot/CoilLeftEcuInstance/CoilLeftCanCommunicationController</COMM-CONTROLLER-REF>
+            </CAN-COMMUNICATION-CONNECTOR>
+          </CONNECTORS>
+        </ECU-INSTANCE>
+        <FLAT-MAP>
+          <SHORT-NAME>CoilLeftFlatMap</SHORT-NAME>
+          <INSTANCES>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="SYSTEM">/ARRoot/CoilLeftSystem</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="R-PORT-PROTOTYPE">/ARRoot/SeatHeatingContollerType/HeatingElementLeft</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+          </INSTANCES>
+        </FLAT-MAP>
+        <SYSTEM>
+          <SHORT-NAME>CoilLeftSystem</SHORT-NAME>
+          <MAPPINGS>
+            <SYSTEM-MAPPING>
+              <SHORT-NAME>CoilLeftSystemMapping</SHORT-NAME>
+              <DATA-MAPPINGS>
+                <CLIENT-SERVER-TO-SIGNAL-MAPPING/>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+              </DATA-MAPPINGS>
+              <SW-IMPL-MAPPINGS>
+                <SWC-TO-IMPL-MAPPING>
+                  <SHORT-NAME>CoilLeftSwcToImpMapping</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ARRoot/CoilLeftSystem/CoilLeftRootSoftwareComposition</CONTEXT-COMPOSITION-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARRoot/CoilLeftTopLevelComposition/CoilLeftSwComponentProto</CONTEXT-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                </SWC-TO-IMPL-MAPPING>
+              </SW-IMPL-MAPPINGS>
+              <SW-MAPPINGS>
+                <SWC-TO-ECU-MAPPING>
+                  <SHORT-NAME>CoilLeftSwcToEcuMapping</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ARRoot/CoilLeftSystem/CoilLeftRootSoftwareComposition</CONTEXT-COMPOSITION-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARRoot/CoilLeftTopLevelComposition/CoilLeftSwComponentProto</CONTEXT-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                </SWC-TO-ECU-MAPPING>
+              </SW-MAPPINGS>
+            </SYSTEM-MAPPING>
+          </MAPPINGS>
+          <ROOT-SOFTWARE-COMPOSITIONS>
+            <ROOT-SW-COMPOSITION-PROTOTYPE>
+              <SHORT-NAME>CoilLeftRootSoftwareComposition</SHORT-NAME>
+            </ROOT-SW-COMPOSITION-PROTOTYPE>
+          </ROOT-SOFTWARE-COMPOSITIONS>
+        </SYSTEM>
+        <COMPOSITION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>CoilLeftTopLevelComposition</SHORT-NAME>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE>
+              <SHORT-NAME>CoilLeftSwComponentProto</SHORT-NAME>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
+          <CONNECTORS>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>CoilLeftConnectorProto</SHORT-NAME>
+            </DELEGATION-SW-CONNECTOR>
+          </CONNECTORS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+        <CAN-CLUSTER>
+          <SHORT-NAME>CoilRightCanCluster</SHORT-NAME>
+          <CAN-CLUSTER-VARIANTS>
+            <CAN-CLUSTER-CONDITIONAL/>
+          </CAN-CLUSTER-VARIANTS>
+        </CAN-CLUSTER>
+        <ECU-INSTANCE>
+          <SHORT-NAME>CoilRightEcuInstance</SHORT-NAME>
+          <COMM-CONTROLLERS>
+            <CAN-COMMUNICATION-CONTROLLER>
+              <SHORT-NAME>CoilRightCanCommunicationController</SHORT-NAME>
+            </CAN-COMMUNICATION-CONTROLLER>
+          </COMM-CONTROLLERS>
+          <CONNECTORS>
+            <CAN-COMMUNICATION-CONNECTOR>
+              <SHORT-NAME>CoilRightCanCommunicationConnector</SHORT-NAME>
+            </CAN-COMMUNICATION-CONNECTOR>
+          </CONNECTORS>
+        </ECU-INSTANCE>
+        <FLAT-MAP>
+          <SHORT-NAME>CoilRightFlatMap</SHORT-NAME>
+          <INSTANCES>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="SYSTEM">/ARRoot/CoilRightSystem</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="P-PORT-PROTOTYPE">/ARRoot/SeatHeatingContollerType/DialLedRight</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+          </INSTANCES>
+        </FLAT-MAP>
+        <SYSTEM>
+          <SHORT-NAME>CoilRightSystem</SHORT-NAME>
+          <MAPPINGS>
+            <SYSTEM-MAPPING>
+              <SHORT-NAME>CoilRightSystemMapping</SHORT-NAME>
+              <DATA-MAPPINGS>
+                <CLIENT-SERVER-TO-SIGNAL-MAPPING/>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+              </DATA-MAPPINGS>
+              <SW-IMPL-MAPPINGS>
+                <SWC-TO-IMPL-MAPPING>
+                  <SHORT-NAME>CoilRightSwcToImpMapping</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF S="">
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ARRoot/CoilRightSystem/CoilRightRootSoftwareComposition</CONTEXT-COMPOSITION-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARRoot/CoilRightTopLevelComposition/CoilRightSwComponentProto</CONTEXT-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                </SWC-TO-IMPL-MAPPING>
+              </SW-IMPL-MAPPINGS>
+              <SW-MAPPINGS>
+                <SWC-TO-ECU-MAPPING>
+                  <SHORT-NAME>CoilRightSwcToEcuMapping</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ARRoot/CoilRightSystem/CoilRightRootSoftwareComposition</CONTEXT-COMPOSITION-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARRoot/CoilRightTopLevelComposition/CoilRightSwComponentProto</CONTEXT-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                </SWC-TO-ECU-MAPPING>
+              </SW-MAPPINGS>
+            </SYSTEM-MAPPING>
+          </MAPPINGS>
+          <ROOT-SOFTWARE-COMPOSITIONS>
+            <ROOT-SW-COMPOSITION-PROTOTYPE>
+              <SHORT-NAME>CoilRightRootSoftwareComposition</SHORT-NAME>
+            </ROOT-SW-COMPOSITION-PROTOTYPE>
+          </ROOT-SOFTWARE-COMPOSITIONS>
+        </SYSTEM>
+        <COMPOSITION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>CoilRightTopLevelComposition</SHORT-NAME>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE>
+              <SHORT-NAME>CoilRightSwComponentProto</SHORT-NAME>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
+          <CONNECTORS>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>CoilRightConnectorProto</SHORT-NAME>
+            </DELEGATION-SW-CONNECTOR>
+          </CONNECTORS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+        <CAN-CLUSTER>
+          <SHORT-NAME>LedDialLeftCanCluster</SHORT-NAME>
+          <CAN-CLUSTER-VARIANTS>
+            <CAN-CLUSTER-CONDITIONAL/>
+          </CAN-CLUSTER-VARIANTS>
+        </CAN-CLUSTER>
+        <ECU-INSTANCE>
+          <SHORT-NAME>LedDialLeftEcuInstance</SHORT-NAME>
+          <COMM-CONTROLLERS>
+            <CAN-COMMUNICATION-CONTROLLER>
+              <SHORT-NAME>LedDialLeftCanCommunicationController</SHORT-NAME>
+            </CAN-COMMUNICATION-CONTROLLER>
+          </COMM-CONTROLLERS>
+          <CONNECTORS>
+            <CAN-COMMUNICATION-CONNECTOR>
+              <SHORT-NAME>LedDialLeftCanCommunicationConnector</SHORT-NAME>
+            </CAN-COMMUNICATION-CONNECTOR>
+          </CONNECTORS>
+        </ECU-INSTANCE>
+        <FLAT-MAP>
+          <SHORT-NAME>LedDialLeftFlatMap</SHORT-NAME>
+          <INSTANCES>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="SYSTEM">/ARRoot/LedDialLeftSystem</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="P-PORT-PROTOTYPE">/ARRoot/SeatHeatingContollerType/DialLedLeft</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+          </INSTANCES>
+        </FLAT-MAP>
+        <SYSTEM>
+          <SHORT-NAME>LedDialLeftSystem</SHORT-NAME>
+          <MAPPINGS>
+            <SYSTEM-MAPPING>
+              <SHORT-NAME>LedDialLeftSystemMapping</SHORT-NAME>
+              <DATA-MAPPINGS>
+                <CLIENT-SERVER-TO-SIGNAL-MAPPING>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </CLIENT-SERVER-TO-SIGNAL-MAPPING>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING S="">
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+              </DATA-MAPPINGS>
+              <SW-IMPL-MAPPINGS>
+                <SWC-TO-IMPL-MAPPING>
+                  <SHORT-NAME>LedDialLeftSwcToImpMapping</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ARRoot/LedDialLeftSystem/LedDialLeftRootSoftwareComposition</CONTEXT-COMPOSITION-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARRoot/LedDialLeftTopLevelComposition/LedDialLeftSwComponentProto</CONTEXT-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                </SWC-TO-IMPL-MAPPING>
+              </SW-IMPL-MAPPINGS>
+              <SW-MAPPINGS>
+                <SWC-TO-ECU-MAPPING>
+                  <SHORT-NAME>LedDialLeftSwToEcuMapping</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ARRoot/LedDialLeftSystem/LedDialLeftRootSoftwareComposition</CONTEXT-COMPOSITION-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARRoot/LedDialLeftTopLevelComposition/LedDialLeftSwComponentProto</CONTEXT-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                  <PROCESSING-UNIT-REF DEST="HW-ELEMENT">/ARRoot/</PROCESSING-UNIT-REF>
+                </SWC-TO-ECU-MAPPING>
+              </SW-MAPPINGS>
+            </SYSTEM-MAPPING>
+          </MAPPINGS>
+          <ROOT-SOFTWARE-COMPOSITIONS>
+            <ROOT-SW-COMPOSITION-PROTOTYPE>
+              <SHORT-NAME>LedDialLeftRootSoftwareComposition</SHORT-NAME>
+            </ROOT-SW-COMPOSITION-PROTOTYPE>
+          </ROOT-SOFTWARE-COMPOSITIONS>
+        </SYSTEM>
+        <COMPOSITION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>LedDialLeftTopLevelComposition</SHORT-NAME>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE>
+              <SHORT-NAME>LedDialLeftSwComponentProto</SHORT-NAME>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
+          <CONNECTORS>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>LedDialLeftConnectorProto</SHORT-NAME>
+            </DELEGATION-SW-CONNECTOR>
+          </CONNECTORS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+        <CAN-CLUSTER>
+          <SHORT-NAME>LedDialRightCanCluster</SHORT-NAME>
+          <CAN-CLUSTER-VARIANTS>
+            <CAN-CLUSTER-CONDITIONAL/>
+          </CAN-CLUSTER-VARIANTS>
+        </CAN-CLUSTER>
+        <ECU-INSTANCE>
+          <SHORT-NAME>LedDialRightEcuInstance</SHORT-NAME>
+          <COMM-CONTROLLERS>
+            <CAN-COMMUNICATION-CONTROLLER>
+              <SHORT-NAME>LedDialRightCanCommunicationController</SHORT-NAME>
+            </CAN-COMMUNICATION-CONTROLLER>
+          </COMM-CONTROLLERS>
+          <CONNECTORS>
+            <CAN-COMMUNICATION-CONNECTOR>
+              <SHORT-NAME>LedDialRightCanCommunicationConnector</SHORT-NAME>
+            </CAN-COMMUNICATION-CONNECTOR>
+          </CONNECTORS>
+        </ECU-INSTANCE>
+        <FLAT-MAP>
+          <SHORT-NAME>LedDialRightFlatMap</SHORT-NAME>
+          <INSTANCES>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="SYSTEM">/ARRoot/LedDialRightSystem</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="P-PORT-PROTOTYPE">/ARRoot/SeatHeatingContollerType/DialLedRight</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+          </INSTANCES>
+        </FLAT-MAP>
+        <SYSTEM>
+          <SHORT-NAME>LedDialRightSystem</SHORT-NAME>
+          <MAPPINGS>
+            <SYSTEM-MAPPING>
+              <SHORT-NAME>LedDialRightSystemMapping</SHORT-NAME>
+              <DATA-MAPPINGS>
+                <CLIENT-SERVER-TO-SIGNAL-MAPPING>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </CLIENT-SERVER-TO-SIGNAL-MAPPING>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+              </DATA-MAPPINGS>
+              <SW-IMPL-MAPPINGS>
+                <SWC-TO-IMPL-MAPPING>
+                  <SHORT-NAME>LedDialRightSwcToImpMapping</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ARRoot/LedDialRightSystem/LedDialRightRootSoftwareComposition</CONTEXT-COMPOSITION-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARRoot/LedDialRightTopLevelComposition/LedDialRightSwComponentProto</CONTEXT-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                </SWC-TO-IMPL-MAPPING>
+              </SW-IMPL-MAPPINGS>
+              <SW-MAPPINGS>
+                <SWC-TO-ECU-MAPPING>
+                  <SHORT-NAME>LedDialRightSwToEcuMapping</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ARRoot/LedDialRightSystem/LedDialRightRootSoftwareComposition</CONTEXT-COMPOSITION-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARRoot/LedDialRightTopLevelComposition/LedDialRightSwComponentProto</CONTEXT-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                </SWC-TO-ECU-MAPPING>
+              </SW-MAPPINGS>
+            </SYSTEM-MAPPING>
+          </MAPPINGS>
+          <ROOT-SOFTWARE-COMPOSITIONS>
+            <ROOT-SW-COMPOSITION-PROTOTYPE>
+              <SHORT-NAME>LedDialRightRootSoftwareComposition</SHORT-NAME>
+            </ROOT-SW-COMPOSITION-PROTOTYPE>
+          </ROOT-SOFTWARE-COMPOSITIONS>
+        </SYSTEM>
+        <COMPOSITION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>LedDialRightTopLevelComposition</SHORT-NAME>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE>
+              <SHORT-NAME>LedDialRightSwComponentProto</SHORT-NAME>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
+          <CONNECTORS>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>LedDialRightConnectorProto</SHORT-NAME>
+            </DELEGATION-SW-CONNECTOR>
+          </CONNECTORS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+        <ECU-INSTANCE>
+          <SHORT-NAME>SeatHeatingLeftECUInstance</SHORT-NAME>
+          <COMM-CONTROLLERS>
+            <CAN-COMMUNICATION-CONTROLLER>
+              <SHORT-NAME>SeatHeatingLeftCanCommunicationController</SHORT-NAME>
+            </CAN-COMMUNICATION-CONTROLLER>
+          </COMM-CONTROLLERS>
+          <CONNECTORS>
+            <CAN-COMMUNICATION-CONNECTOR>
+              <SHORT-NAME>SeatHeatingLeftCanCommunicationConnector</SHORT-NAME>
+              <COMM-CONTROLLER-REF DEST="CAN-COMMUNICATION-CONTROLLER">/ARRoot/SeatHeatingLeftECUInstance/SeatHeatingLeftCanCommunicationController</COMM-CONTROLLER-REF>
+            </CAN-COMMUNICATION-CONNECTOR>
+          </CONNECTORS>
+        </ECU-INSTANCE>
+        <FLAT-MAP>
+          <SHORT-NAME>SeatHeatingLeftFlatMap</SHORT-NAME>
+          <INSTANCES>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="SYSTEM">/ARRoot/SeatHeatingLeftSystem</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="R-PORT-PROTOTYPE">/ARRoot/SeatHeatingContollerType/HeatingElementLeft</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+          </INSTANCES>
+        </FLAT-MAP>
+        <SYSTEM>
+          <SHORT-NAME>SeatHeatingLeftSystem</SHORT-NAME>
+          <MAPPINGS>
+            <SYSTEM-MAPPING>
+              <SHORT-NAME>SeatHeatingLeftSystemMapping</SHORT-NAME>
+              <DATA-MAPPINGS>
+                <CLIENT-SERVER-TO-SIGNAL-MAPPING>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </CLIENT-SERVER-TO-SIGNAL-MAPPING>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+              </DATA-MAPPINGS>
+              <SW-IMPL-MAPPINGS>
+                <SWC-TO-IMPL-MAPPING>
+                  <SHORT-NAME>SeatHeatingLeftSwcToImpleMapping</SHORT-NAME>
+                  <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/ARRoot/HeatingElementImpFile</COMPONENT-IMPLEMENTATION-REF>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ARRoot/SeatHeatingLeftSystem/SeatHeatingLeftRootSoftwareComposition</CONTEXT-COMPOSITION-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARRoot/SeatHeatingLeftTopLevelComposition/SeatHeatingLeftSwComponentProto</CONTEXT-COMPONENT-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARRoot/SeatHeatingLeftTopLevelComposition/SeatHeatingLeftSwComponentProto</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                </SWC-TO-IMPL-MAPPING>
+              </SW-IMPL-MAPPINGS>
+              <SW-MAPPINGS>
+                <SWC-TO-ECU-MAPPING>
+                  <SHORT-NAME>SeatHeatingLeftSwToEcuMapping</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ARRoot/SeatHeatingLeftSystem/SeatHeatingLeftRootSoftwareComposition</CONTEXT-COMPOSITION-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARRoot/SeatHeatingLeftTopLevelComposition/SeatHeatingLeftSwComponentProto</CONTEXT-COMPONENT-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARRoot/SeatHeatingLeftTopLevelComposition/SeatHeatingLeftSwComponentProto</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                  <CONTROLLED-HW-ELEMENT-REF DEST="HW-ELEMENT">/ARRoot/</CONTROLLED-HW-ELEMENT-REF>
+                  <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/ARRoot/SeatHeatingLeftECUInstance</ECU-INSTANCE-REF>
+                  <PROCESSING-UNIT-REF DEST="HW-ELEMENT">/ARRoot/</PROCESSING-UNIT-REF>
+                </SWC-TO-ECU-MAPPING>
+              </SW-MAPPINGS>
+            </SYSTEM-MAPPING>
+          </MAPPINGS>
+          <ROOT-SOFTWARE-COMPOSITIONS>
+            <ROOT-SW-COMPOSITION-PROTOTYPE UUID="">
+              <SHORT-NAME>SeatHeatingLeftRootSoftwareComposition</SHORT-NAME>
+              <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ARRoot/SeatHeatingLeftTopLevelComposition</SOFTWARE-COMPOSITION-TREF>
+            </ROOT-SW-COMPOSITION-PROTOTYPE>
+          </ROOT-SOFTWARE-COMPOSITIONS>
+        </SYSTEM>
+        <COMPOSITION-SW-COMPONENT-TYPE S="">
+          <SHORT-NAME>SeatHeatingLeftTopLevelComposition</SHORT-NAME>
+          <CATEGORY></CATEGORY>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE>
+              <SHORT-NAME>SeatHeatingLeftSwComponentProto</SHORT-NAME>
+              <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ARRoot/SeatHeatingLeftTopLevelComposition</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
+          <CONNECTORS>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>SeatHeatingLeftConnectorProto</SHORT-NAME>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ARRoot/SeatHeatingContollerType/HeatingElementLeft</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+          </CONNECTORS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+        <ECU-INSTANCE>
+          <SHORT-NAME>SeatHeatingRightEcuInstance</SHORT-NAME>
+          <COMM-CONTROLLERS>
+            <CAN-COMMUNICATION-CONTROLLER>
+              <SHORT-NAME>SeatHeatingRightCanCommunicationController</SHORT-NAME>
+              <CATEGORY></CATEGORY>
+            </CAN-COMMUNICATION-CONTROLLER>
+          </COMM-CONTROLLERS>
+          <CONNECTORS>
+            <CAN-COMMUNICATION-CONNECTOR>
+              <SHORT-NAME>SeatHeatingRightCanCommunicationConnector</SHORT-NAME>
+              <COMM-CONTROLLER-REF DEST="CAN-COMMUNICATION-CONTROLLER">/ARRoot/SeatHeatingRightEcuInstance/SeatHeatingRightCanCommunicationController</COMM-CONTROLLER-REF>
+            </CAN-COMMUNICATION-CONNECTOR>
+          </CONNECTORS>
+        </ECU-INSTANCE>
+        <FLAT-MAP>
+          <SHORT-NAME>SeatHeatingRightFlatMap</SHORT-NAME>
+          <INSTANCES>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="SYSTEM">/ARRoot/SeatHeatingRightSystem</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="R-PORT-PROTOTYPE">/ARRoot/SeatHeatingContollerType/HeatingElementRight</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+          </INSTANCES>
+        </FLAT-MAP>
+        <SYSTEM>
+          <SHORT-NAME>SeatHeatingRightSystem</SHORT-NAME>
+          <MAPPINGS>
+            <SYSTEM-MAPPING>
+              <SHORT-NAME>SeatHeatingRightSystemMapping</SHORT-NAME>
+              <DATA-MAPPINGS>
+                <CLIENT-SERVER-TO-SIGNAL-MAPPING/>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+              </DATA-MAPPINGS>
+              <SW-IMPL-MAPPINGS>
+                <SWC-TO-IMPL-MAPPING>
+                  <SHORT-NAME>SeatHeatingRighttSwcToImpleMapping</SHORT-NAME>
+                  <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/ARRoot/HeatingElementImpFile</COMPONENT-IMPLEMENTATION-REF>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF S="">
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ARRoot/SeatHeatingRightSystem/SeatHeatingRightRootSoftwareComposition</CONTEXT-COMPOSITION-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARRoot/SeatHeatingRightTopLevelComposition/SeatHeatingRightSwComponentProto</CONTEXT-COMPONENT-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARRoot/SeatHeatingRightTopLevelComposition/SeatHeatingRightSwComponentProto</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                </SWC-TO-IMPL-MAPPING>
+              </SW-IMPL-MAPPINGS>
+              <SW-MAPPINGS>
+                <SWC-TO-ECU-MAPPING>
+                  <SHORT-NAME>SeatHeatingRightSwToEcuMapping</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ARRoot/SeatHeatingRightSystem/SeatHeatingRightRootSoftwareComposition</CONTEXT-COMPOSITION-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARRoot/SeatHeatingRightTopLevelComposition/SeatHeatingRightSwComponentProto</CONTEXT-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                </SWC-TO-ECU-MAPPING>
+              </SW-MAPPINGS>
+            </SYSTEM-MAPPING>
+          </MAPPINGS>
+          <ROOT-SOFTWARE-COMPOSITIONS>
+            <ROOT-SW-COMPOSITION-PROTOTYPE>
+              <SHORT-NAME>SeatHeatingRightRootSoftwareComposition</SHORT-NAME>
+              <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ARRoot/SeatHeatingRightTopLevelComposition</SOFTWARE-COMPOSITION-TREF>
+            </ROOT-SW-COMPOSITION-PROTOTYPE>
+          </ROOT-SOFTWARE-COMPOSITIONS>
+        </SYSTEM>
+        <COMPOSITION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>SeatHeatingRightTopLevelComposition</SHORT-NAME>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE>
+              <SHORT-NAME>SeatHeatingRightSwComponentProto</SHORT-NAME>
+              <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ARRoot/SeatHeatingRightTopLevelComposition</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
+          <CONNECTORS>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>SeatHeatingRightConnectorProto</SHORT-NAME>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ARRoot/SeatHeatingContollerType/HeatingElementRight</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+          </CONNECTORS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+        <CAN-CLUSTER>
+          <SHORT-NAME>SeatingHeatingLeftCanCluster</SHORT-NAME>
+          <CAN-CLUSTER-VARIANTS>
+            <CAN-CLUSTER-CONDITIONAL>
+              <PHYSICAL-CHANNELS>
+                <CAN-PHYSICAL-CHANNEL>
+                  <SHORT-NAME>SeatHeatingLeftCanPhysicalChannel</SHORT-NAME>
+                  <COMM-CONNECTORS>
+                    <COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                      <COMMUNICATION-CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/ARRoot/SeatHeatingLeftECUInstance/SeatHeatingLeftCanCommunicationConnector</COMMUNICATION-CONNECTOR-REF>
+                    </COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                  </COMM-CONNECTORS>
+                </CAN-PHYSICAL-CHANNEL>
+              </PHYSICAL-CHANNELS>
+              <PROTOCOL-NAME></PROTOCOL-NAME>
+            </CAN-CLUSTER-CONDITIONAL>
+          </CAN-CLUSTER-VARIANTS>
+        </CAN-CLUSTER>
+        <CAN-CLUSTER>
+          <SHORT-NAME>SeatingHeatingRightCanCluster</SHORT-NAME>
+          <CAN-CLUSTER-VARIANTS>
+            <CAN-CLUSTER-CONDITIONAL>
+              <PROTOCOL-NAME></PROTOCOL-NAME>
+              <PROTOCOL-VERSION></PROTOCOL-VERSION>
+            </CAN-CLUSTER-CONDITIONAL>
+          </CAN-CLUSTER-VARIANTS>
+        </CAN-CLUSTER>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
