@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="90290a7c-68d1-4778-8c71-8ef9d6f4d01a">
+      <SHORT-NAME>ARRoot</SHORT-NAME>
+      <ELEMENTS>
+        <HW-ELEMENT/>
+        <FLAT-MAP>
+          <SHORT-NAME>DoorLockFlatMap</SHORT-NAME>
+          <INSTANCES>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="SYSTEM">/ARRoot/DoorLockingSystem</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="DELEGATION-SW-CONNECTOR">/ARRoot/DoorLockSwComponentType/BacksideRightIndicationConnectorProto</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="SYSTEM">/ARRoot/DoorLockingSystem</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="DELEGATION-SW-CONNECTOR">/ARRoot/DoorLockSwComponentType/FrontLeftIndicationConnectorProto</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="SYSTEM">/ARRoot/DoorLockingSystem</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="DELEGATION-SW-CONNECTOR">/ARRoot/DoorLockSwComponentType/FrontRightIndicationConnectorProto</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="SYSTEM">/ARRoot/DoorLockingSystem</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="DELEGATION-SW-CONNECTOR">/ARRoot/DoorLockSwComponentType/InteriorLightConnectorProto</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>DoorLockFlatInstanceDescriptor</SHORT-NAME>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="SYSTEM">/ARRoot/DoorLockingSystem</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="DELEGATION-SW-CONNECTOR">/ARRoot/DoorLockSwComponentType/BacksideLeftIndicationConnectorProto</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+          </INSTANCES>
+        </FLAT-MAP>
+        <COMPOSITION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>DoorLockSwComponentType</SHORT-NAME>
+          <CONNECTORS>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>BacksideLeftIndicationConnectorProto</SHORT-NAME>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>BacksideRightIndicationConnectorProto</SHORT-NAME>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>FrontLeftIndicationConnectorProto</SHORT-NAME>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>FrontRightIndicationConnectorProto</SHORT-NAME>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>InteriorLightConnectorProto</SHORT-NAME>
+            </DELEGATION-SW-CONNECTOR>
+          </CONNECTORS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+        <SYSTEM>
+          <SHORT-NAME>DoorLockingSystem</SHORT-NAME>
+          <MAPPINGS>
+            <SYSTEM-MAPPING>
+              <SHORT-NAME>DoorLockSystemMapping</SHORT-NAME>
+              <DATA-MAPPINGS>
+                <CLIENT-SERVER-TO-SIGNAL-MAPPING/>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING/>
+              </DATA-MAPPINGS>
+              <MAPPING-CONSTRAINTS>
+                <SWC-TO-ECU-MAPPING-CONSTRAINT>
+                  <ECU-INSTANCE-REFS>
+                    <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/ARRoot/DoorLockingSystemECUInstance</ECU-INSTANCE-REF>
+                  </ECU-INSTANCE-REFS>
+                </SWC-TO-ECU-MAPPING-CONSTRAINT>
+              </MAPPING-CONSTRAINTS>
+              <SW-IMPL-MAPPINGS>
+                <SWC-TO-IMPL-MAPPING>
+                  <SHORT-NAME>DoorLockSwcToImplMapping</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ARRoot/DoorLockingSystem/DoorLockingRootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                </SWC-TO-IMPL-MAPPING>
+              </SW-IMPL-MAPPINGS>
+              <SW-MAPPINGS>
+                <SWC-TO-ECU-MAPPING>
+                  <SHORT-NAME>DoorLockSwToECUMapping</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ARRoot/DoorLockingSystem/DoorLockingRootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                  <CONTROLLED-HW-ELEMENT-REF DEST="HW-ELEMENT">/ARRoot/</CONTROLLED-HW-ELEMENT-REF>
+                  <PROCESSING-UNIT-REF DEST="HW-ELEMENT">/ARRoot/</PROCESSING-UNIT-REF>
+                </SWC-TO-ECU-MAPPING>
+              </SW-MAPPINGS>
+            </SYSTEM-MAPPING>
+          </MAPPINGS>
+          <ROOT-SOFTWARE-COMPOSITIONS>
+            <ROOT-SW-COMPOSITION-PROTOTYPE>
+              <SHORT-NAME>DoorLockingRootSwCompositionPrototype</SHORT-NAME>
+              <FLAT-MAP-REF DEST="FLAT-MAP">/ARRoot/DoorLockFlatMap</FLAT-MAP-REF>
+              <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ARRoot/DoorLockSwComponentType</SOFTWARE-COMPOSITION-TREF>
+            </ROOT-SW-COMPOSITION-PROTOTYPE>
+          </ROOT-SOFTWARE-COMPOSITIONS>
+        </SYSTEM>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
