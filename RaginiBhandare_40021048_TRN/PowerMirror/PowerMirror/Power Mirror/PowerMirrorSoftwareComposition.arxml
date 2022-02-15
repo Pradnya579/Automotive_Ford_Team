@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="77f672d5-6a80-443c-babc-4a0fc437cb8c">
+      <SHORT-NAME>ARRoot</SHORT-NAME>
+      <ELEMENTS>
+        <HW-ELEMENT/>
+        <COMPOSITION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>Mirrorontrol</SHORT-NAME>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
